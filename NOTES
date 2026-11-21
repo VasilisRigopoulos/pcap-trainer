@@ -1,0 +1,25 @@
+1. Τρέξε python trainer/game.py. Ποιο σφάλμα βγαίνει; Γιατί το python main.py δουλεύει;
+  answer:
+  the main.py works due to the imports of the trainers and it's contents.
+  it runs with zero errors, atleast from my play testing.
+  (it also works because I programmed it, not to brag)
+
+2. Γιατί το python trainer/questions.py τυπώνει 6 ερωτήσεις, ενώ όταν τρέχεις το main.py αυτές δεν τυπώνονται;
+  answer:    
+  what? what do you mean by 6 questions.
+
+3. Πάτα Ctrl+C στην πρώτη ερώτηση. Ποια γραμμή τυπώνεται πριν από το «Διακοπή από τον χρήστη», και ποιο σημείο του κώδικα την τύπωσε;
+  answer:
+  if the user presses Ctrl+C on the first question, it'll print out the current score and mistakes, which after will print out my version of «Διακοπή από τον χρήστη».
+  the code printed the first can be located in the game.py, on the 55th line, which is inside of a finally. which always gets executed, no matter what exception.
+
+4. Στο REPL (python από τον φάκελο του repo): from trainer.errors import OutOfRange και μετά OutOfRange(5, 0, 3).args. Τι βγαίνει και από πού προέρχεται;
+  answer:  
+  by running the command listed above. it'll print out exactly ('5 is outside of valid answer range [0,3]',). it comes from the errors.py located
+  insde the trainer packet.
+
+5. Αν στο play() βάλεις except TrainerError as e: πρώτο, πάνω από το except BadAnswer, ποιο except θα τρέξει όταν γράψεις «abc»; Γιατί;
+  answer:
+  either i did the assignment wrong or im missing something. i'll assume that you mean REPLACE the BadAnswer with TrainerError.
+  it prints out the same thing as BadAsnwer would, this is because BadAnswer is a Child of TrainerError, which it is a child of Expection.
+  and/or because they're fundementally the same structure. aka they both share same code, a simple pass.
