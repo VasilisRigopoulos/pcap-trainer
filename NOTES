@@ -1,3 +1,6 @@
+PLEASE NOTE: i used Visual Studio to Develop the Program you assigned us. i chose this because i felt more comfortable.
+and after i finished the assignment, uploaded the file.
+
 1. Τρέξε python trainer/game.py. Ποιο σφάλμα βγαίνει; Γιατί το python main.py δουλεύει;
   answer:
   the main.py works due to the imports of the trainers and it's contents.
